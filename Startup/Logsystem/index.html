@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>LogSystem</title>
+
+<!-- CSS -->
+        <!-- Exportando fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <!-- Exportando Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Css Geral -->
+        <link rel="stylesheet" href="css/slide.css"/>
+        <link href="css/geral.css" rel="stylesheet">
+
+
+    </head>
+    
+    <body>
+
+        <!-- Slide Automático -->
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Log</span> System</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="login.html" class="bi-person custom-icon me-3"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">História</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="projetos.html">Projetos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="duvidas.html">Duvidas?</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                          <!-- 
+                        <div class="d-none d-lg-block">
+                            <a href="login.html" class="bi-person custom-icon me-3">Login</a>
+                        </div>
+                        Slider -->
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Slider -->
+            <section class="slick-slideshow">   
+                <div class="slick-custom">
+                    <img src="images/slideshow/bradesco.jpg" class="img-fluid" alt="Imagem do Bradesco">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h1 class="slick-title">LogSystem</h1>
+
+                                    <p class="lead text-white mt-lg-3 mb-lg-5">Startup, criada em 2022 na instituição da Fundação Bradesco</p>
+
+                                    <a href="sobre.html" class="btn custom-btn">Conheça nossa história</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-custom">
+                    <img src="images/slideshow/desenvolvimento.jpg" class="img-fluid" alt="">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h1 class="slick-title">Diversidades de Programas</h1>
+
+                                    <p class="lead text-white mt-lg-3 mb-lg-5">A LogSystem tem desenvolvedores de diferentes especialidades, sendo front quanto back end</p>
+
+                                    <a href="projetos.html" class="btn custom-btn">Ver projetos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-custom">
+                    <img src="images/slideshow/contato.jpg" class="img-fluid" alt="">
+
+                    <div class="slick-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-10">
+                                    <h1 class="slick-title">Entre em contato</h1>
+
+                                    <p class="lead text-white mt-lg-3 mb-lg-5">A logSystem preza pela qualidade e comprometimento nos projetos desenvolvidos</p>
+
+                                    <a href="contato.html" class="btn custom-btn">contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Conteudo 1 -->
+            <section class="about section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-5">Seja bem <span> vindo</span> </h2>
+                        </div>
+
+                        <div class="col-lg-2 col-12 mt-auto mb-auto">
+                            <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introducão</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-youtube-tab" data-bs-toggle="pill" data-bs-target="#pills-youtube" type="button" role="tab" aria-controls="pills-youtube" aria-selected="true">O que fazemos?</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="false">Conhecimentos</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-10 col-12">
+                            <div class="tab-content mt-2" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                    <div class="row">
+                                        <div class="col-lg-7 col-12 logoSys">
+                                            <img src="images/logos/system logo.png" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                               
+
+                                                <p>A logSystem é uma startup, criada em 2022 na instituição da Fundação Bradesco, tendo como finalidade: o inicio de algo grande, tendo o foco de levar adiante esse projeto.</p>
+                                                <p>Tendo em vista isso, a LogSystem é uma startup de desenolvimento de programas, visando a necessidade do usuário.</p>
+                                   
+
+                                                <div class="mt-2 mt-lg-auto">
+                                                    <a href="sobre.html" class="custom-link mb-2">
+                                                        Veja mais sobre
+                                                        <i class="bi-arrow-right ms-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-youtube" role="tabpanel" aria-labelledby="pills-youtube-tab">
+
+                                    <div class="row">
+                                        
+                                            <div class="col-lg-7 col-12 logoSysD">
+                                                <img src="images/oqfazemos.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        
+
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                               <h4 class="mb-3">O que fazemos?</h4>
+
+                                                <p>Como ja dito na introdução, a LogSystem, é uma startup de desenvolvimento de programas back e front end, visando as necessidades dos usuários.</p>
+                                                <p>No entanto, A logSystem preza pela qualidade e comprometimento nos projetos e trabalhos desenvolvidos, possuindo uma equipe capacitada.</p>
+                                              
+
+                                                <div class="mt-2 mt-lg-auto">
+                                                    <a href="contato.html" class="custom-link mb-2">
+                                                        Entre em contato
+                                                        <i class="bi-arrow-right ms-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-12">
+                                            <img src="images/conhecimento.jpg" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                                <h4 class="mb-3">Conhecimentos</h4>
+
+                                                <p>A LogSystem tem desenvolvedores de diferentes especialidades, sendo front quanto back end, no entanto, é importante destacar o nivel de conhecimento nas linguagens.</p>
+
+                                                <div class="skill-thumb mt-3">
+
+                                                    <strong>Python</strong>
+                                                        <span class="float-end">50%</span>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                                            </div>
+
+                                                    <strong>C++</strong>
+                                                        <span class="float-end">70%</span>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                                            </div>
+
+                                                    <strong>Desenvolvimento Web</strong>
+                                                        <span class="float-end">80%</span>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                                            </div>
+
+                                                </div>
+                                                
+                                                <div class="mt-2 mt-lg-auto">
+                                                    <a href="products.html" class="custom-link mb-2">
+                                                        Ver projetos
+                                                        <i class="bi-arrow-right ms-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <h2 class="mb-5 text-center">Objetivos</h2>
+
+                            <div class="col-lg-4 col-12 d-flex p-0">
+                                <img src="images/Rlx/img1.jpeg" class="img-fluid services-image" alt="">
+                            </div>
+
+                            <div class="col-lg-4 col-12 p-0">
+                                <div class="services-info custom-icon-left paddingText">
+                                
+                                    <h4 class="">Formação</h4>
+
+                                    <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                                    <a class="custom-btn custom-bg-dark btn" href="sobre.html">Leia Sobre</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-12 d-flex  p-0">
+                                <img src="images/Rlx/img2.jpg" class="img-fluid services-image" alt="">
+                            </div>
+
+                            <div class="col-lg-4 col-12 p-0 order-lg-0 order-sm-5">
+                          
+                                <div class="services-info custom-icon-right paddingText order-lg-0 order-sm-2">
+                                
+                                    <h4 class="">Inovação</h4>
+
+                                    <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                                    <a class="custom-btn custom-bg-dark btn" href="sobre.html">Leia Sobre</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-12 d-flex p-0 order-lg-0 order-sm-4">
+                                <img src="images/Rlx/img3.jpg" class="img-fluid services-image" alt="">
+                            </div>
+
+                            <div class="col-lg-4 col-12 p-0">
+
+                                <div class="services-info custom-icon-top paddingText">
+                            
+                                    <h4 class="">Escalabilidade</h4>
+
+                                    <p class="mb-4">Lorem Ipsum is simply dummy text of the printing industry</p>
+
+                                    <a class="custom-btn custom-bg-dark btn" href="sobre.html">Leia Sobre</a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Duvidas?</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="duvidas.html">FAQ</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="contato.html">Formulário</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                           
+  
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>(em desenvolvimento)</h4>
+                        <ul>
+                            <li><a href="#">Cadastro</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

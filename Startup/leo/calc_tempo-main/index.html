@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular dias</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        function countDays() {
+            let date_ini = new Date(document.form_main.date_ini.value);
+            let date_end = new Date(document.form_main.date_end.value);
+
+            let diff = date_end.getTime() - date_ini.getTime();
+
+            document.getElementById('days').innerText = Math.floor(diff / day);
+        }
+
+        function countHours() {
+            let date_ini = new Date(document.form_main.date_ini.value);
+            let date_end = new Date(document.form_main.date_end.value);
+
+            let diff = date_end.getTime() - date_ini.getTime();
+
+            document.getElementById('hour').innerText = Math.floor(diff / hour);
+        }
+
+        function countMins() {
+            let date_ini = new Date(document.form_main.date_ini.value);
+            let date_end = new Date(document.form_main.date_end.value);
+
+            let diff = date_end.getTime() - date_ini.getTime();
+
+            document.getElementById('minutes').innerText = Math.floor(diff / minute);
+        }
+
+        function countSecs() {
+            let date_ini = new Date(document.form_main.date_ini.value);
+            let date_end = new Date(document.form_main.date_end.value);
+
+            let diff = date_end.getTime() - date_ini.getTime();
+
+            document.getElementById('seconds').innerText = Math.floor(diff / second);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Calcular período de tempo + conversão</h1>
+
+    <form name="form_main">
+        <label for="date_ini">Data Inicial: </label>
+        <input name="date_ini" id="date_ini" type="date"> <br>
+        <p></p>
+        <label for="date_end">Data Final: </label>
+        <input name="date_end" id="date_end" type="date"> <br>
+        <p></p>
+        <strong><label for="days">Dias passados: </label><span id="days"> </span></strong>
+        <p></p>
+        <strong><label for="hour">Horas passadas: </label><span id="hour"> </span></strong>
+        <p></p>
+        <strong><label for="minutes">Minutos passados: </label><span id="minutes"> </span></strong>
+        <p></p>
+        <strong><label for="secs">Segundos passados: </label><span id="seconds"> </span></strong>
+        <p></p>
+        <button type="button" onclick="countDays()">Contar dias</button>
+        <button type="button" onclick="countHours()">Contar horas</button>
+        <button type="button" onclick="countMins()">Contar minutos</button>
+        <button type="button" onclick="countSecs()">Contar segundos</button>
+    </form>
+
+</body>
+
+</html>

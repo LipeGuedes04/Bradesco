@@ -1,0 +1,64 @@
+hr {
+border-top: 1px solid
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #01ffad;
+  background-color: #01ffdc;
+  background-clip: padding-box;
+  border: 1px solid #01ffa1;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.info span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.info {
+  color: #f85c70;
+  font-size: 14px;
+}
+.footer {
+  background: #f62b45;
+}
+
+.header .header-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+}
+.header .header-content .header-title {
+  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+  line-height: .7;
+  margin-bottom: 25px;
+  color: #ffffff
+}
+.about-section {
+  border-bottom: 1px solid #212121;
+}
+ .contact .contact-form-card {
+    border-bottom: 1px solid #dee2e6;
+  }
+.contact .contact-form-card,
+.contact .contact-info-card {
+  padding: 35px;
+  background: #ffffff1a;
+  min-height: 500px;
+}
+.bg-white {
+.navbar-light .navbar-nav .nav-link:
+.navbar-light .navbar-nav .nav-link {

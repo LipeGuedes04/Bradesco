@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function limpar() {
+            document.getElementById('visor').value = '';
+        }
+
+        function unir(valor) {
+            document.getElementById('visor').value += valor;
+        }
+
+        function calcular() {
+            var resultado = 0;
+            resultado = document.getElementById('visor').value;
+            document.getElementById('visor').value = eval(resultado);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="visor">
+            <input type="text" id="visor">
+        </div>
+        <div class="botoes">
+            <input type="submit" value="1" onmouseover="this.select();" onclick="unir(1);">
+            <input type="submit" value="2" onmouseover="this.select();" onclick="unir(2);">
+            <input type="submit" value="3" onmouseover="this.select();" onclick="unir(3);">
+            <input type="submit" value="+" onmouseover="this.select();" onclick="unir('+');">
+            <input type="submit" value="4" onmouseover="this.select();" onclick="unir(4);">
+            <input type="submit" value="5" onmouseover="this.select();" onclick="unir(5);">
+            <input type="submit" value="6" onmouseover="this.select();" onclick="unir(6);">
+            <input type="submit" value="-" onmouseover="this.select();" onclick="unir('-');">
+            <input type="submit" value="7" onmouseover="this.select();" onclick="unir(7);">
+            <input type="submit" value="8" onmouseover="this.select();" onclick="unir(8);">
+            <input type="submit" value="9" onmouseover="this.select();" onclick="unir(9);">
+            <input type="submit" value="/" onmouseover="this.select();" onclick="unir('/');">
+            <input type="submit" value="." onmouseover="this.select();" onclick="unir('.');">
+            <input type="submit" value="0" onmouseover="this.select();" onclick="unir(0);">
+            <input type="submit" value="*" onmouseover="this.select();" onclick="unir('*');">
+            <input type="submit" value="=" class="igual" onmouseover="this.select();" onclick="calcular(); ">
+        </div>
+        <div class="converter">
+            <input type="submit" value="kg to g" onmouseover="this.select();" onclick="unir('*1000');">
+            <input type="submit" value="g to kg" onmouseover="this.select();" onclick="unir('/1000');">
+            <input type="submit" value="km to m" onmouseover="this.select();" onclick="unir('*1000');">
+            <input type="submit" value="cm to m" onmouseover="this.select();" onclick="unir('/100');">
+            <input type="submit" value="h to min" onmouseover="this.select();" onclick="unir('*60');">
+            <input type="submit" value="h to s" onmouseover="this.select();" onclick="unir('*3600');">
+            <input type="submit" value="GB to MB" onmouseover="this.select();" onclick="unir('*1024');">
+            <input type="submit" value="KB to MB" onmouseover="this.select();" onclick="unir('/1024');">
+        </div>
+        <div class="clear">
+            <input type="submit" value="C" onmouseover="this.select();" onclick="limpar();">
+        </div>
+    </div>
+</body>
+
+</html>

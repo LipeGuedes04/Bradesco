@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>LogSystem</title>
+
+        <!-- CSS -->
+                <!-- Exportando fonts -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+                <!-- Exportando Bootstrap -->
+                <link href="css/bootstrap.min.css" rel="stylesheet">
+                <link href="css/bootstrap-icons.css" rel="stylesheet">
+        
+                <!-- Css Geral -->
+                <link rel="stylesheet" href="css/slide.css"/>
+                <link href="css/geral.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+             <!-- Menu -->
+             <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Log</span> System</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="login.html" class="bi-person custom-icon me-3"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">História</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="projetos.html">Projetos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="duvidas.html">Duvidas?</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                        
+                            <!-- 
+                        <div class="d-none d-lg-block">
+                            <a href="login.html" class="bi-person custom-icon me-3">Login</a>
+                        </div>
+                        Slider -->
+                    </div>
+                </div>
+            </nav>
+            
+            <header class="site-header section-padding d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12">
+                            <h1>
+                                <span class="d-block text-primary">Perguntas</span>
+                                <span class="d-block text-dark">Importantes</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="faq section-padding">
+                <div class="container">
+                    <div class="row">
+                        <!-- Visão Geral -->
+                        <div class="col-lg-8 col-12">
+                            <h2>Visão Geral</h2>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneral1" aria-expanded="false" aria-controls="accordionGeneral1">
+                                    Em qual cidade a startup está localizada?
+                                    </button>
+                                </h2>
+
+                                <div id="accordionGeneral1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionGeneral">
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph">Rio de Janeiro, na istituição da Fundação Bradesco.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion" id="accordionGeneral">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneral2" aria-expanded="true" aria-controls="accordionGeneral2">
+                                        Quando foi criada?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionGeneral2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionGeneral">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Em 2022, sendo um dos projetos integradores do Curso técnico de desenvolvimento de software da Fundação Bradesco.</p>     
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneral3" aria-expanded="false" aria-controls="accordionGeneral3">
+                                            O que a startup faz?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionGeneral3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionGeneral">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph"></a>Desenvolver programas Front e back end, visando as necessidades dos usuários</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneral4" aria-expanded="false" aria-controls="accordionGeneral4">
+                                        Qual é o problema identificado pela startup?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionGeneral4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionGeneral">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Com o avanço constante da tecnolôgia, muitos usuários necessitam de meios de transmição de informações e programas que automatizam processos. No entanto, a LogSystem faz esse serviço de desensevolver esses programas, visando a necessidade do mercado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneral5" aria-expanded="false" aria-controls="accordionGeneral5">
+                                         Qual é o diferencial da startup?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionGeneral5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionGeneral">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Sendo uma startup recente, o principal objetivo da startup, é desafios, para que haja aprendizados e ganho de experiências, no entanto, se torna uma mao de obra mais barata e tambêm de melhor acompanhamento dos programas desenvolvidos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Mercado e Competidores -->
+                            <h2 class="mt-5">Mercado e Competidores</h2>
+
+                            <div class="accordion" id="accordionProduct">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct6" aria-expanded="true" aria-controls="accordionProduct6">
+                                         Quão grande é a oportunidade de mercado identificada?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">O mercado cada vez mais necessita de mão de obra de profissionais de Ti, no entanto, a startup vem pra suprir a necessidade de usuários que não possuem conhecimentos na área de TI.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading7">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct7" aria-expanded="false" aria-controls="accordionProduct7">
+                                         Dessa oportunidade, qual é o mercado-alvo inicial? Em outras palavras, a solução está direcionada para qual porcentagem dessa oportunidade?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">O mercado alvo inicial, é o usuários que buscam programas e sites mais simples de pequeno porte.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading8">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct8" aria-expanded="false" aria-controls="accordionProduct8">
+                                            Qual a parcela de mercado que a startup busca adquirir e em quanto tempo?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Com as experiências após diversos trabalhos, a startup busca atigir as empresas de pequeno e médio porte.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading9">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct9" aria-expanded="false" aria-controls="accordionProduct9">
+                                            Quem são os competidores?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">No mercado atual, e no objetivo de nossa startup, os competidores são programadores, que constumam trabalhar sosinhos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading10">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct10" aria-expanded="false" aria-controls="accordionProduct10">
+                                            Quais são os pontos fortes, não limitado aos produtos, dos seus competidores? 
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Experiências profissionais.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading11">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct11" aria-expanded="false" aria-controls="accordionProduct11">
+                                            Qual o diferencial competitivo da solução? 
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">A LogSystem é composta por um grupo de programadores que possuem diferentes características, que juntos buscam o desenvolvimento profissional, no entanto, o diferencial competitivo seria a quantidade de programadores desenvolvendo um unico projeto, tendo assim, um melhor desenvolvimento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Time -->
+                                <h2 class="mt-5">Time</h2>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading12">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct12" aria-expanded="false" aria-controls="accordionProduct12">
+                                            Quem são os fundadores da startup? Todos ainda estão no corpo da startup? Como está dividido o capital entre os fundadores?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Os fundadores da startup, é composta pelo time todo presente, no momento, ainda não foi investido nenhum capital.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading13">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct13" aria-expanded="false" aria-controls="accordionProduct13">
+                                            Quem compõe o time da startup? Quais habilidades e experiência cada um possui?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">O time da startup é composto pelos desenvolvedores: Felipe Guedes e Leo Roza, pelos Analistas de sistema e Suporte técnico: Paulo Barbosa, Matheus Lima e Gabriel Castro, e pelos desing> João Paulo e Lucas Garret.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading14">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct14" aria-expanded="false" aria-controls="accordionProduct14">
+                                            Qual a dedicação (parcial ou total) de cada um?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">A dedicação de cada um é positiva, no entato, os membros estão buscando desenvolvimento profissional, se dedicando nos cursos técnicos e faculdades</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading15">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct15" aria-expanded="false" aria-controls="accordionProductTwo">
+                                            Qual é a motivação da equipe?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">A motivação da Equipe é busca o desenvolvimento profissional e experiências em projetos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading16">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct16" aria-expanded="false" aria-controls="accordionProduct16">
+                                            Caso a startup cresça, qual é o plano de expansão da equipe?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">O plano de Expansão da quipe, é abrir um CNPJ e prestar serviços a empresas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Produtos e serviços -->
+                                <h2 class="mt-5">Produtos e Serviços</h2>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading17">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct17" aria-expanded="false" aria-controls="accordionProduct17">
+                                            Quais são as principais funcionalidades do serviço oferecido?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Os serviços oferecidos é composta pelo desenvolvimento de programas, sendo eles em python, C++, php e Web (Html,css,js).</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading18">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct18" aria-expanded="false" aria-controls="accordionProduct18">
+                                            Por que os usuários contratariam o serviço da startup?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">A startup inicialmente, terá um custo mais acessivel e dará um suporte priorizado aos clientes, sendo eles, atualizações, concerto de bugs, mudanças etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading19">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct19" aria-expanded="false" aria-controls="accordionProduct19">
+                                            O que deu errado até o momento em relação ao produto? Ou seja, o que a startup aprendeu sobre os clientes?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">No momento, ainda buscamos o primeiro projeto e assim desenvolver as experiências.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading20">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct20" aria-expanded="false" aria-controls="accordionProduct20">
+                                            Como é feita a evolução do produto? Existe um roadmap, um backlog que é priorizado de acordo com o valor agregado?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">No momento, por ser uma startup incial, o roadmap e o backlog é feito pela ferramenta do figma, onde é organizado as etapas de um determinado projeto para chegar o resultado final.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading21">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct21" aria-expanded="false" aria-controls="accordionProduct21">
+                                            Quais são as próximas três principais funcionalidades a serem entregues? E para quando está previsto?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">São um sitema de filtro, criação de sitema de login e envio de formlário via email, previsto para o dia 23.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Marketing e Aquisição de Novos Clientes -->
+
+                                <h2 class="mt-5">Marketing e Aquisição de Novos Clientes </h2>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading23">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct23" aria-expanded="false" aria-controls="accordionProduct23">
+                                            Quais (ou quantos) foram os clientes adquiridos até o momento? Quais (ou quantos) estão em negociação?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">No momento os projetos ainda estão sendo montados para esse fim.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading24">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct24" aria-expanded="false" aria-controls="accordionProduct24">
+                                            Como eles foram adquiridos? Quão longo foi o ciclo de vendas?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Em processo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading25">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct25" aria-expanded="false" aria-controls="accordionProduct25">
+                                            Qual foi o custo de aquisição desses clientes? Existe alguma projeção para diminuir esse custo?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Em processo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading26">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct26" aria-expanded="false" aria-controls="accordionProduct26">
+                                            Existe um plano de marketing, por mais simples que seja?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Desenvolver diversos programas e deixar na "vitrine" do site da startup e começar a divulgação nas redes sociais.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <!-- Finanças -->
+
+                                <h2 class="mt-5">Finanças</h2>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading27">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct27" aria-expanded="false" aria-controls="accordionProduct27">
+                                            Como está a vida financeira atual da startup?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Em processo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading28">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct28" aria-expanded="false" aria-controls="accordionProduct28">
+                                            Qual é a projeção para os próximos três anos? Quais são as principais hipóteses assumidas para essa projeção?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">A projeção será o crescimento da startup, tendo membros mais experiêntes e melhores desenvolvidos, buscando assim a rentabilidade dos projetos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading29">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct29" aria-expanded="false" aria-controls="accordionProduct29">
+                                            Para quando está previsto que a startup comece a operar no azul?
+                                        </button>
+                                    </h2>
+
+                                    <div id="accordionProduct29" class="accordion-collapse collapse" aria-labelledby="heading29" data-bs-parent="#accordionProduct">
+
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Em processo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                 <!-- Rodada de investimento -->
+
+                                 <h2 class="mt-5">Rodada de investimento</h2>
+
+                                 <div class="accordion-item">
+                                     <h2 class="accordion-header" id="heading31">
+                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct31" aria-expanded="false" aria-controls="accordionProduct31">
+                                            Quanto é esperado de investimento e por qual parcela da startup?
+                                         </button>
+                                     </h2>
+ 
+                                     <div id="accordionProduct31" class="accordion-collapse collapse" aria-labelledby="heading31" data-bs-parent="#accordionProduct">
+ 
+                                         <div class="accordion-body">
+                                             <p class="large-paragraph">Em processo.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="accordion-item">
+                                     <h2 class="accordion-header" id="heading32">
+                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionProduct32" aria-expanded="false" aria-controls="accordionProduct32">
+                                            O que será feito com o investimento?
+                                         </button>
+                                     </h2>
+ 
+                                     <div id="accordionProduct32" class="accordion-collapse collapse" aria-labelledby="heading32" data-bs-parent="#accordionProduct">
+ 
+                                         <div class="accordion-body">
+                                             <p class="large-paragraph">Em processo.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Duvidas?</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="duvidas.html">FAQ</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="contato.html">Formulário</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                           
+  
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Conta</h4>
+                        <ul>
+                            <li><a href="cadastro.html">Cadastro</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
